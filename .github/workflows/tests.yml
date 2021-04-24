@@ -31,9 +31,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pytest
-          pip install beem
-          pip install pytz
+          pip install -r requirements.txt
           
       - name: Test with pytest
         run: |
